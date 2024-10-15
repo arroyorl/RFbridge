@@ -10,7 +10,7 @@ The program sytores a transmiting codes array with 5 codes (configurable), speci
 > [!NOTE]
 > On first run, the program creates an access point with name "ESP-RF433" creating a web server accessible on http://192.168.4.1 which allow to configure SSID/password,node name and MQTT configuration. Once configured these parameters, the program connects to the configured WiFi and starts data capturing and submission. This AP can also been activated after a reset if the SETUP_PIN (GPIO 0) is down during a lapse of 5 seconds after reset.
 
-Once done the first setup, there are several web pages which can be used for configuration, as well as RF codes trasmision.
+Once done the first setup, there are several web pages which can be used for configuration, as well as RF codes trasmision.<br>
   **http://ip_address/setup**    Initial setu page, allows change WiFi and MQTT configuration<br>
   **http://ip_address/updateform**  form for define RX and TX codes, and association between them (wich TX code will be trigered upon reception of an defined RX code<br>
   **http://ip_address/listdata**    List all defined RX and TX codes<br>
